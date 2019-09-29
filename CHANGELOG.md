@@ -15,13 +15,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
-## [1.0.0-beta.2] - 2019-08-17
+## [1.0.0-beta.2] - 2019-09-29
 
-### Removed
+### Added
 
-- Removed some exports
+- ClassNames function for bem and conditionally apply classes
 
-## [1.0.0-beta.1] - 2019-08-17
+## [1.0.0-beta.1] - 2019-09-29
 
 ### Added
 
