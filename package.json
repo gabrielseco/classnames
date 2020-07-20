@@ -19,14 +19,14 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "version": "auto-changelog -p --template keepachangelog && git add CHANGELOG.md",
-    "prepublishOnly": "git push && git push --tags && gh-release",
     "build": "rm -rf dist && rollup -c rollup.config.ts",
     "watch": "rollup -c rollup.config.ts -w",
     "lint:ts": "front-linter js  -- --presets=typescript",
     "test": "jest --coverage",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "test:watch": "jest --watchAll --coverage"
+    "test:watch": "jest --watchAll --coverage",
+    "release:prepare": "shipjs prepare",
+    "release:trigger": "shipjs trigger"
   },
   "peerDependencies": {},
   "dependencies": {},
@@ -36,17 +36,16 @@
     "@types/jest": "^26.0.5",
     "@types/node": "^14.0.23",
     "@types/rollup-plugin-postcss": "^2.0.0",
-    "auto-changelog": "^2.2.0",
     "autoprefixer": "^9.8.5",
     "babel-loader": "^8.1.0",
     "coveralls": "^3.1.0",
     "eslint-import-resolver-typescript": "^2.0.0",
-    "gh-release": "^3.5.0",
     "husky": "^4.2.5",
     "jest": "^26.1.0",
     "lint-staged": "^10.2.11",
     "rollup": "^2.22.1",
     "rollup-plugin-typescript2": "^0.27.1",
+    "shipjs": "^0.20.1",
     "ts-jest": "^26.1.3",
     "ts-loader": "^8.0.1",
     "typescript": "3.9.7"
