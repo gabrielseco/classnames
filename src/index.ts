@@ -1,3 +1,4 @@
-import ClassNames from './classnames'
+import { ClassNames } from './classnames';
 
-export default ClassNames
+//eslint-disable-next-line
+export default ClassNames;
