@@ -1,6 +1,6 @@
 {
   "name": "@rogal/classnames",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "Apply classes conditionally and parse classes from css modules",
   "keywords": [],
   "main": "dist/classnames.umd.js",
