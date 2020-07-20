@@ -15,6 +15,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+## [1.0.0-beta.3] - 2020-07-20
+
+### Fixed
+
+- Fixed typescript types
+
 ## [1.0.0-beta.2] - 2019-09-29
 
 ### Added
