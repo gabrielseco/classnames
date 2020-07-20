@@ -31,4 +31,34 @@ describe('ClassNames function', () => {
 
     expect(className).toBe(`${styles.card} shadow-1`)
   })
+
+  it("should inject a dynamic class if it's not undefined", () => {
+    const styles = {
+      card: 'card-59494949',
+      card__header: 'card__header-505959'
+    }
+    const classNames = ClassNames(styles)
+    const injectedClassName = 'shadow-1'
+    const className = classNames({
+      card: true,
+      [injectedClassName]: injectedClassName
+    })
+
+    expect(className).toBe(`${styles.card} ${injectedClassName}`)
+  })
+
+  it("should not inject a dynamic class if it's an empty string", () => {
+    const styles = {
+      card: 'card-59494949',
+      card__header: 'card__header-505959'
+    }
+    const classNames = ClassNames(styles)
+    const injectedClassName = ''
+    const className = classNames({
+      card: true,
+      [injectedClassName]: injectedClassName
+    })
+
+    expect(className).toBe(`${styles.card}`)
+  })
 })
