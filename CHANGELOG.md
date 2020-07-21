@@ -15,7 +15,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
-## [1.0.0-beta.3] - 2020-07-20
+## [1.0.0-beta.4] - 2020-07-21
+
+### Fixed
+
+- Fixed build npm
+
+## [1.0.0-beta.3] - 2020-07-20 (BROKEN BUILD)
 
 ### Fixed
 
