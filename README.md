@@ -1,4 +1,4 @@
-# ClassNames
+# ClassNames [![NPM Version](https://img.shields.io/npm/v/@rogal/classnames.svg)](https://www.npmjs.com/package/@rogal/classnames) [![NPM Downloads](https://img.shields.io/npm/dm/@rogal/classnames.svg)](https://www.npmjs.com/package/classnames) [![Actions Status](https://github.com/gabrielseco/classnames/workflows/build/badge.svg)](https://github.com/gabrielseco/classnames/actions) [![Coverage Status](https://coveralls.io/repos/github/gabrielseco/classnames/badge.svg?branch=master)](https://coveralls.io/github/gabrielseco/classnames?branch=master)
 
 > A small utility to get classnames for css-modules and apply classes conditionally in react
 

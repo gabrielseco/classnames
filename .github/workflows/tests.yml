@@ -1,4 +1,4 @@
-name: CI
+name: ci
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
     - run: npm run lint:ts
     - run: npm run build --if-present
     - run: npm test
-    #- name: coveralls
-     # uses: coverallsapp/github-action@master
-      #with:
-       # github-token: ${{ secrets.GITHUB_TOKEN }}
+    - name: coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
