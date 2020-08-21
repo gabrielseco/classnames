@@ -1,3 +1,7 @@
+# [1.0.0](https://github.com/gabrielseco/classnames/compare/1.0.0-beta.3...1.0.0) (2020-08-21)
+
+
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
