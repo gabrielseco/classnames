@@ -1,7 +1,3 @@
-# [1.0.0](https://github.com/gabrielseco/classnames/compare/1.0.0-beta.3...1.0.0) (2020-08-21)
-
-
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
@@ -18,6 +14,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 ### Removed
+
+# [1.0.0] - 2020-08-21
+
+- Release it 🚀🚀🚀
 
 ## [1.0.0-beta.4] - 2020-07-21
 
