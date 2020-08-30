@@ -15,10 +15,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Removed
 
+# [1.0.2] - 2020-08-30
+### Fixed
+- Fixed types classnames for undefined values
+
 # [1.0.1] - 2020-08-30
 ### Fixed
 - Fixed types definition
-
 
 # [1.0.0] - 2020-08-21
 
