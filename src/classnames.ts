@@ -1,4 +1,5 @@
 type ArgClassName = { [key: string]: string | boolean | undefined };
+
 const applyClassNames = (obj: ArgClassName) => {
   return Object.keys(obj)
     .map((key) => {
