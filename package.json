@@ -5,7 +5,7 @@
   "keywords": [],
   "main": "dist/classnames.umd.js",
   "module": "dist/classnames.es5.js",
-  "typings": "dist/types/index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
