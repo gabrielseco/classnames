@@ -47,6 +47,21 @@ describe('ClassNames function', () => {
     expect(className).toBe(`${styles.card} ${injectedClassName}`);
   });
 
+  it("should apply the class if the property it's number", () => {
+    const styles = {
+      card: 'card-59494949',
+      card__header: 'card__header-505959'
+    };
+    const classNames = ClassNames(styles);
+    const sm = 6;
+    const className = classNames({
+      card: true,
+      [`col-sm-${sm}`]: sm
+    });
+
+    expect(className).toBe(`${styles.card} col-sm-${sm}`);
+  });
+
   it("should not apply the class if the property it's undefined", () => {
     const styles = {
       card: 'card-59494949',

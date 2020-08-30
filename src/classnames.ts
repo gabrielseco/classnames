@@ -1,4 +1,4 @@
-type ArgClassName = { [key: string]: string | boolean | undefined };
+type ArgClassName = { [key: string]: number | string | boolean | undefined };
 
 const applyClassNames = (obj: ArgClassName) => {
   return Object.keys(obj)
