@@ -47,6 +47,21 @@ describe('ClassNames function', () => {
     expect(className).toBe(`${styles.card} ${injectedClassName}`);
   });
 
+  it("should not apply the class if the property it's undefined", () => {
+    const styles = {
+      card: 'card-59494949',
+      card__header: 'card__header-505959'
+    };
+    const classNames = ClassNames(styles);
+    const injectedClassName = undefined;
+    const className = classNames({
+      card: true,
+      card__header: injectedClassName
+    });
+
+    expect(className).toBe(`${styles.card}`);
+  });
+
   it("should not inject a dynamic class if it's an empty string", () => {
     const styles = {
       card: 'card-59494949',

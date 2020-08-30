@@ -1,4 +1,6 @@
-const applyClassNames = (obj: { [key: string]: string | boolean }) => {
+type ArgClassName = { [key: string]: string | boolean | undefined };
+
+const applyClassNames = (obj: ArgClassName) => {
   return Object.keys(obj)
     .map((key) => {
       return obj[key] ? key : '';
@@ -17,7 +19,7 @@ export const ClassNames = (styles: { [key: string]: string }) => {
     return _styles[className] ? _styles[className] : '';
   };
 
-  const classNames = (obj: { [key: string]: string | boolean }) => {
+  const classNames = (obj: ArgClassName) => {
     const classNamesToBeApplied = applyClassNames(obj).split(' ');
     const stylesClasses = Object.keys(_styles);
 
@@ -28,7 +30,7 @@ export const ClassNames = (styles: { [key: string]: string }) => {
     return finalClassNames.join(' ');
   };
 
-  return function (items: string | { [key: string]: string | boolean }) {
+  return function (items: string | ArgClassName) {
     if (typeof items === 'string') {
       return bem(items);
     }
