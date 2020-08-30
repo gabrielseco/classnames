@@ -1,7 +1,3 @@
-## [1.0.3](https://github.com/gabrielseco/classnames/compare/v1.0.2...v1.0.3) (2020-08-30)
-
-
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
@@ -18,6 +14,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 
 ### Removed
+
+# [1.0.3] - 2020-08-30
+### Fixed
+- Fixed types classnames for number values
 
 # [1.0.2] - 2020-08-30
 ### Fixed
