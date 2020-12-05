@@ -31,7 +31,7 @@
   "peerDependencies": {},
   "dependencies": {},
   "devDependencies": {
-    "@rogal/front-linter": "3.0.0-beta.7",
+    "@rogal/front-linter": "3.0.0-beta.8",
     "@types/jest": "26.0.16",
     "@types/node": "14.14.10",
     "babel-loader": "8.2.2",
